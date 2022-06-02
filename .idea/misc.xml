@@ -4,16 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/drawable/card_backround.xml" value="0.2890625" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.2890625" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2890625" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2890625" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2890625" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/drawable/side_nav_bar.xml" value="0.2890625" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/activity_detalle_concepto.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/activity_detalle_gasto.xml" value="0.33" />
         <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/activity_factura.xml" value="0.33" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/activity_seccion_cuenta.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/app_bar_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/calendar.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/content_main.xml" value="0.1641337386018237" />
-        <entry key="..\:/Users/PERSONAL/BeautyShopApp/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/PERSONAL/BeautyShopApp/app/src/main/res/layout/activity_seccion_cuenta.xml" value="0.15" />
-        <entry key="..\:/Users/PERSONAL/BeautyShopApp/app/src/main/res/layout/app_bar_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/PERSONAL/BeautyShopApp/app/src/main/res/layout/content_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/PERSONAL/BeautyShopApp/app/src/main/res/layout/fragment_gallery.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/PERSONAL/BeautyShopApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/PERSONAL/BeautyShopApp/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/layout/nav_header_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/PC T-REX/AndroidStudioProjects/BeautyShopApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>
