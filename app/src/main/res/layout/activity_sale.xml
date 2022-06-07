@@ -4,16 +4,158 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment"
+    android:background="@color/colorGray"
     android:orientation="vertical"
-    android:background="@color/colorGray">
+    tools:context=".ui.fab.saleActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="18dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btnImageCalendar"
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:onClick="openCalendarr"
+                    android:src="@drawable/icons8_calendar_96px"></ImageView>
+
+                <TextView
+
+                    android:id="@+id/datepick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="02 abril 2022" />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="18dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_calendar_today_24"></ImageView>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="Seleccionar cita" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        app:cardCornerRadius="18dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Valor" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/icons8_money_48px_gasto" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="$500" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="#525252">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="Valor total"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="195dp"
+                    android:text="$500"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
         app:cardCornerRadius="18dp"
-        >
+        android:backgroundTint="@color/colorGray">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -28,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginTop="8dp"
-                    android:text="Nombre" />
+                    android:text="Concepto" />
             </TableRow>
 
             <TableRow
@@ -41,12 +183,12 @@
                     android:layout_marginLeft="8dp"
                     android:src="@drawable/ic_baseline_label_24" />
 
-                <TextView
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:textSize="14dp"
-                    android:text="Aldrin" />
+                    android:text="Corte de pelo" />
 
             </TableRow>
 
@@ -59,8 +201,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        app:cardCornerRadius="18dp"
-        >
+        app:cardCornerRadius="18dp">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -75,43 +216,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginTop="8dp"
-                    android:text="Apellido" />
+                    android:text="Método de pago" />
             </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="8dp"
-                    android:src="@drawable/ic_baseline_label_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:textSize="14dp"
-                    android:text="Caceres May" />
-
-            </TableRow>
-
-
-
-        </TableLayout>
-
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        app:cardCornerRadius="18dp"
-        >
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
             <TableRow
                 android:layout_width="wrap_content"
@@ -121,27 +227,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Celular" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="8dp"
-                    android:src="@drawable/ic_baseline_local_phone_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:textSize="14dp"
-                    android:text="+52 983 147 5858" />
-
+                    android:layout_marginBottom="8dp"
+                    android:text="Efectivo" />
             </TableRow>
 
 
@@ -149,58 +236,13 @@
         </TableLayout>
 
     </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        app:cardCornerRadius="18dp"
-        >
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="14dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Correo" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="10dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="8dp"
-                    android:src="@drawable/ic_baseline_alternate_email_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:textSize="14dp"
-                    android:text="aldrin.caceres@gmail.com" />
-
-            </TableRow>
-
-
-
-        </TableLayout>
-
-    </androidx.cardview.widget.CardView>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:layout_gravity="center"
-        android:backgroundTint="@color/purple_500"
-        android:text="guardar"/>
+        android:backgroundTint="#85bb65"
+        android:text="crear venta"/>
+
 </LinearLayout>

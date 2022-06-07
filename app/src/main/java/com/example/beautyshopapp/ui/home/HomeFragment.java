@@ -1,6 +1,7 @@
 package com.example.beautyshopapp.ui.home;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -37,7 +39,8 @@ public class HomeFragment extends Fragment {
     private TextView datestring;
     private ImageView btnImageCalendar;
     private CompactCalendarView compactCalendarView;
-    private SimpleDateFormat dateFormatMonth = new SimpleDateFormat("MMMM- yyyy", Locale.getDefault());
+    private SimpleDateFormat dateFormatMonth;
+    private CardView cardView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -46,7 +49,17 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        dateFormatMonth = new SimpleDateFormat("MMMM- yyyy", Locale.getDefault());
         datestring = (TextView) binding.dateCalendar;
+        cardView=(CardView)binding.register;
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(),RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
         //datestring = (TextView) binding.dateString;
         //  btnImageCalendar = (ImageView)binding.btnImageCalendar;
 

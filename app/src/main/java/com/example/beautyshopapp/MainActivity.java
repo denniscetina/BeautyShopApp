@@ -1,10 +1,13 @@
 package com.example.beautyshopapp;
 
-import android.content.res.ColorStateList;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.beautyshopapp.ui.fab.quoteActivity;
+import com.example.beautyshopapp.ui.fab.saleActivity;
+import com.example.beautyshopapp.ui.fab.spentActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -30,19 +33,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
-        binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
+        /*binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                        ff0000
             }
-        });
+        });*/
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_inventory, R.id.nav_profile)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -63,5 +67,21 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void intentSale(View view) {
+        Intent intent = new Intent(this, saleActivity.class);
+        startActivity(intent);
+    }
+
+    public void intentSpent(View view) {
+        Intent intent = new Intent(this, spentActivity.class);
+        startActivity(intent);
+    }
+
+    public void intentQuote(View view) {
+        Intent intent = new Intent(this, quoteActivity.class);
+        startActivity(intent);
+
     }
 }

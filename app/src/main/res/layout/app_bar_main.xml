@@ -22,13 +22,55 @@
 
     <include layout="@layout/content_main" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="bottom|end"
+        app:fab_addButtonColorNormal="@color/purple_200"
+        app:fab_addButtonColorPressed="@color/purple_500"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:fab_labelStyle="@style/menuLabelsStyle"
+        app:srcCompat="@android:drawable/ic_input_add">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+
+            android:id="@+id/fabAction1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_colorPressed="@color/purple_500"
+
+            android:onClick="intentSpent"
+            app:fab_title="Nuevo gasto"
+            app:fab_icon="@drawable/ic_baseline_monetization_on_24"
+            ></com.getbase.floatingactionbutton.FloatingActionButton>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAction2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_colorPressed="@color/purple_500"
+            app:fab_icon="@drawable/ic_baseline_add_business_24"
+            android:onClick="intentSale"
+            app:fab_title="Nueva venta"
+            ></com.getbase.floatingactionbutton.FloatingActionButton>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAction3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_colorPressed="@color/purple_500"
+            app:fab_icon="@drawable/ic_baseline_quote_add_24"
+            android:onClick="intentQuote"
+            app:fab_title="Nueva cita"
+            ></com.getbase.floatingactionbutton.FloatingActionButton>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

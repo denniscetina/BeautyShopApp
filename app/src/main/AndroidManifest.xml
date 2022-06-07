@@ -10,6 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeautyShopApp">
         <activity
+            android:name=".ui.fab.quoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fab.spentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.fab.saleActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sale" />
+        <activity
+            android:name=".ui.home.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".SeccionCuenta"
             android:exported="false" />
         <activity
