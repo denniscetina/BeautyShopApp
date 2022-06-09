@@ -23,7 +23,11 @@ import com.example.beautyshopapp.ui.adapter.MainAdapter;
 import com.example.beautyshopapp.ui.home.RegisterActivity;
 import com.example.beautyshopapp.ui.objetc.Productos;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -35,6 +39,8 @@ public class GalleryFragment extends Fragment {
     SearchView searchView;
     MainAdapter mainAdapter;
     Button subirPr;
+    TextView productoT;
+    private DatabaseReference databaseReference;
     ArrayList<Productos> list;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -47,6 +53,7 @@ public class GalleryFragment extends Fragment {
         searchView = (SearchView)binding.searchView;
 
         subirPr = (Button)binding.crearProd;
+        productoT = (TextView)binding.totalProductos;
         recyclerVieww = (RecyclerView)binding.recyclerViewProduct;
         recyclerVieww.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -103,6 +110,29 @@ public class GalleryFragment extends Fragment {
     public void onStart() {
         super.onStart();
         mainAdapter.startListening();
+        databaseReference= FirebaseDatabase.getInstance().getReference().child("ProductosE/Productos");
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot1) {
+                for(DataSnapshot snapshot1: dataSnapshot1.getChildren()){
+
+                    long totalVenta = dataSnapshot1.getChildrenCount();
+
+                    productoT.setText(totalVenta+"");
+
+
+
+                }
+
+            }
+
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                System.out.println("The read failed: " + error.getCode());
+            }
+
+        });
 
     }
 }

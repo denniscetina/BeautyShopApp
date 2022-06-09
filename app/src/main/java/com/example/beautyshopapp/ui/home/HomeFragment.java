@@ -248,8 +248,20 @@ public class HomeFragment extends Fragment {
             public void onDayClick(Date dateClicked) {
                 List<Event> events = compactCalendarView.getEvents(dateClicked);
                 events.size();
+                if(events.size()>=2){
+                    Toast.makeText(getActivity(),"Tiene cita con "+events.size()+" personas",Toast.LENGTH_SHORT).show();
+                }else{
+                    if(events.size()==0){
+                        Toast.makeText(getActivity(),"No tiene cita con ninguna persona",Toast.LENGTH_SHORT).show();
+                    }else{
+                        if(events.size()==1){
+                            Toast.makeText(getActivity(),"Tiene cita con "+events.size()+" persona",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+
                 //Log.d(TAG, "Day was clicked: " + dateClicked + " with events " + events);
-                Toast.makeText(getActivity(),"Tiene cita con "+events.size()+" personas",Toast.LENGTH_SHORT).show();
+
                // Toast.makeText(getContext(), "Day was clicked: " + asString + " with events " + events, Toast.LENGTH_SHORT).show();
             }
 

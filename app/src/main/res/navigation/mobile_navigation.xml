@@ -22,4 +22,9 @@
         android:name="com.example.beautyshopapp.ui.slideshow.SlideshowFragment"
         android:label="Perfil"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.beautyshopapp.ui.about.AboutFragment"
+        android:label="Acerca de"
+        tools:layout="@layout/fragment_about" />
 </navigation>

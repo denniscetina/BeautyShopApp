@@ -8,6 +8,7 @@
     android:background="@color/colorGray"
     tools:context=".ui.gallery.GalleryFragment">
 
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,10 +25,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/totalProductos"
                     android:layout_width="202dp"
                     android:layout_height="wrap_content"
                     android:padding="2dip"
-                    android:text="954"
+                    android:text="0"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:layout_weight="1"/>
@@ -70,11 +72,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewProduct"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="348dp"
         android:paddingVertical="5dp"
         android:scrollbars="vertical"
 
-       />
+        />
     <Button
         android:id="@+id/crearProd"
         android:layout_width="wrap_content"
@@ -84,4 +86,5 @@
         android:backgroundTint="@color/purple_500"
         android:text="Subir producto"
         />
+
 </LinearLayout>

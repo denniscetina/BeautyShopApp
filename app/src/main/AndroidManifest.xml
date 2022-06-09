@@ -11,17 +11,20 @@
         android:theme="@style/Theme.BeautyShopApp">
         <activity
             android:name=".ui.home.QuotesAppointment"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Citas pendientes"/>
         <activity
             android:name=".ui.fab.quoteActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Nueva cita"/>
         <activity
             android:name=".ui.fab.spentActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Nuevo gasto"/>
         <activity
             android:name=".ui.fab.saleActivity"
             android:exported="false"
-            android:label="@string/title_activity_sale" />
+            android:label="Nueva venta" />
         <activity
             android:name=".ui.home.RegisterActivity"
             android:exported="false" />
@@ -33,7 +36,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.gallery.DetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Resumen producto"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
