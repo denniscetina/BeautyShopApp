@@ -33,7 +33,7 @@
 
                 <TextView
 
-                    android:id="@+id/datepick"
+                    android:id="@+id/fechaSale"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -69,14 +69,15 @@
                     android:layout_weight="1"
                     android:src="@drawable/ic_baseline_calendar_today_24"></ImageView>
 
-                <TextView
+                <EditText
 
+                    android:id="@+id/clienteSale"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:padding="2dip"
-                    android:text="Seleccionar cita" />
+                    android:text="Ari Yam" />
 
 
             </TableRow>
@@ -119,11 +120,12 @@
                     android:layout_marginLeft="8dp"
                     android:src="@drawable/icons8_money_48px_gasto" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/valorSale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:text="$500" />
+                    android:text="500" />
             </TableRow>
 
             <TableRow
@@ -184,6 +186,7 @@
                     android:src="@drawable/ic_baseline_label_24" />
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/conceptoSale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -224,6 +227,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/metodoPSale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
@@ -238,10 +242,12 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:layout_gravity="center"
+        android:onClick="subirVenta"
         android:backgroundTint="#85bb65"
         android:text="crear venta"/>
 

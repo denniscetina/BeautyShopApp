@@ -76,10 +76,12 @@
 
        />
     <Button
+        android:id="@+id/crearProd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/purple_500"
-        android:text="crear cita"/>
+        android:text="Subir producto"
+        />
 </LinearLayout>

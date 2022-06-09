@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BeautyShopApp">
         <activity
+            android:name=".ui.home.QuotesAppointment"
+            android:exported="false" />
+        <activity
             android:name=".ui.fab.quoteActivity"
             android:exported="false" />
         <activity
@@ -24,6 +27,12 @@
             android:exported="false" />
         <activity
             android:name=".SeccionCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gallery.EntryProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.gallery.DetailsActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

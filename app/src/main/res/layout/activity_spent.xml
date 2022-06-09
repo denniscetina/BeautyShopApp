@@ -35,7 +35,7 @@
 
                     <TextView
 
-                        android:id="@+id/datePickSpent"
+                        android:id="@+id/fechaSpent"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -76,7 +76,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <TextView
+                    <EditText
+                        android:id="@+id/categoriaSpent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="14dp"
@@ -122,11 +123,12 @@
                         android:layout_marginLeft="8dp"
                         android:src="@drawable/icons8_money_48px_gasto" />
 
-                    <TextView
+                    <EditText
+                        android:id="@+id/valorSpent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:text="$500" />
+                        android:text="500" />
                 </TableRow>
 
                 <TableRow
@@ -187,6 +189,7 @@
                         android:src="@drawable/ic_baseline_label_24" />
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/conceptoSpent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
@@ -227,6 +230,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
+                        android:id="@+id/metodoPSpent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="14dp"
@@ -241,11 +245,13 @@
         </androidx.cardview.widget.CardView>
 
         <Button
+            android:id="@+id/gastoBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:layout_gravity="center"
             android:backgroundTint="#ff0000"
+
             android:text="crear gasto"/>
 
     </LinearLayout>

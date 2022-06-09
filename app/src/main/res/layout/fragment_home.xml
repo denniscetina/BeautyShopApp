@@ -33,24 +33,15 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:layout_width="202dp"
+                            android:id="@+id/totalVentas"
+                            android:layout_width="377dp"
                             android:layout_height="wrap_content"
+                            android:gravity="center"
                             android:padding="2dip"
                             android:text="254"
-                            android:textStyle="bold"
-                            android:gravity="center" />
+                            android:textStyle="bold" />
 
-                        <TextView
 
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="$4,678"
-                            android:textStyle="bold"
-                            android:padding="2dip"
-                            android:layout_weight="1"
-                            android:gravity="center"
-
-                            />
                     </TableRow>
 
                     <TableRow
@@ -66,14 +57,7 @@
                             android:layout_span="1"
                             android:gravity="center"/>
 
-                        <TextView
 
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Ingreso total"
-                            android:padding="2dip"
-                            android:layout_weight="1"
-                            android:gravity="center"/>
                     </TableRow>
 
                 </TableLayout>
@@ -158,6 +142,7 @@
 
                             <TextView
 
+                                android:id="@+id/utilidadT"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -200,7 +185,7 @@
 
                                 android:gravity="center"
                                 android:padding="2dip"
-                                android:text="Venta total"/>
+                                android:text="Ingreso total"/>
 
 
                         </TableRow>
@@ -211,12 +196,13 @@
 
                             <TextView
 
+                                android:id="@+id/ingresoT"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:padding="2dip"
-                                android:text="$100" />
+                                android:text="100" />
 
 
                         </TableRow>
@@ -245,12 +231,13 @@
 
                             <TextView
 
+                                android:id="@+id/gastoT"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:padding="2dip"
-                                android:text="$100" />
+                                android:text="100" />
 
 
                         </TableRow>
@@ -288,10 +275,12 @@
                 app:compactCalendarMultiEventIndicatorColor="#fff"
                 />
             <androidx.cardview.widget.CardView
+                android:id="@+id/seeQuotes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
-                app:cardCornerRadius="18dp">
+                app:cardCornerRadius="18dp"
+                >
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

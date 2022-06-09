@@ -35,7 +35,7 @@
 
                     <TextView
 
-                        android:id="@+id/datePickSpent"
+                        android:id="@+id/fechaQuote"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -82,6 +82,7 @@
                         android:src="@drawable/ic_baseline_label_24" />
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/conceptoQuote"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
@@ -129,6 +130,7 @@
                         android:src="@drawable/ic_baseline_person_add_alt_1_24" />
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/clienteQuote"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
@@ -173,9 +175,11 @@
                         android:layout_width="10dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="8dp"
-                        android:src="@drawable/ic_baseline_more_time_24" />
+                        android:src="@drawable/ic_baseline_more_time_24"
+                        android:onClick="openHour"/>
 
-                    <com.google.android.material.textfield.TextInputEditText
+                    <TextView
+                        android:id="@+id/horaQuote"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
@@ -197,6 +201,7 @@
             android:layout_margin="12dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/purple_500"
+            android:onClick="uploadQuote"
             android:text="crear cita"/>
 
     </LinearLayout>
